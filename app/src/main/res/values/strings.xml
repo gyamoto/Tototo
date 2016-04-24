@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Tototo</string>
+    <string name="plug_status_on">plugged</string>
+    <string name="plug_status_off">no plug</string>
 </resources>

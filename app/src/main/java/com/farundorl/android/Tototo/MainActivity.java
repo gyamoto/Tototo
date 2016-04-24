@@ -1,5 +1,7 @@
 package com.farundorl.android.Tototo;
 
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.databinding.DataBindingUtil;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
@@ -9,16 +11,25 @@ import android.view.View;
 
 import com.farundorl.android.Tototo.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity implements ToneHandler {
+public class MainActivity extends AppCompatActivity implements ToneHandler, AudioPlugListener {
 
+    private PlugStatus plugStatus;
     private ToneGenerator toneGenerator;
+    private AudioHeadsetPlugReceiver noisyReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.setToneHandler(this);
+        plugStatus = new PlugStatus(AudioPlugUtil.isPlugged(this));
+        binding.setPlugStatus(plugStatus);
+
         toneGenerator = new ToneGenerator(AudioManager.STREAM_DTMF, ToneGenerator.MAX_VOLUME);
+
+        noisyReceiver = new AudioHeadsetPlugReceiver();
+        noisyReceiver.setListener(this);
+        registerReceiver(noisyReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
     }
 
     @Override
@@ -32,6 +43,12 @@ public class MainActivity extends AppCompatActivity implements ToneHandler {
     @Override
     protected void onDestroy() {
         toneGenerator.release();
+        unregisterReceiver(noisyReceiver);
         super.onDestroy();
+    }
+
+    @Override
+    public void audioChange(boolean plugged) {
+        plugStatus.setPlugged(plugged);
     }
 }

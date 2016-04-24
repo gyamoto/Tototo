@@ -4,6 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+
+    <!--respect d3-->
     <color name="category_1">#1f77b4</color>
     <color name="category_2">#aec7e8</color>
     <color name="category_3">#ff7f0e</color>
