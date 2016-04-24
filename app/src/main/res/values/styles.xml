@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ToneButton" parent="AppTheme">
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Category" parent="AppTheme" />
+
+    <style name="Category.1">
+        <item name="colorAccent">@color/category_1</item>
+    </style>
+
+    <style name="Category.2">
+        <item name="colorAccent">@color/category_2</item>
+    </style>
+
+    <style name="Category.3">
+        <item name="colorAccent">@color/category_3</item>
+    </style>
+
+    <style name="Category.4">
+        <item name="colorAccent">@color/category_4</item>
+    </style>
+
+    <style name="Category.5">
+        <item name="colorAccent">@color/category_5</item>
+    </style>
+
+    <style name="Category.6">
+        <item name="colorAccent">@color/category_6</item>
+    </style>
+
+    <style name="Category.7">
+        <item name="colorAccent">@color/category_7</item>
+    </style>
+
+    <style name="Category.8">
+        <item name="colorAccent">@color/category_8</item>
+    </style>
+
+    <style name="Category.9">
+        <item name="colorAccent">@color/category_9</item>
+    </style>
+
+    <style name="Category.10">
+        <item name="colorAccent">@color/category_10</item>
+    </style>
+
+    <style name="Category.11">
+        <item name="colorAccent">@color/category_11</item>
+    </style>
+
+    <style name="Category.12">
+        <item name="colorAccent">@color/category_12</item>
+    </style>
+
+    <style name="Category.13">
+        <item name="colorAccent">@color/category_13</item>
+    </style>
+
+    <style name="Category.14">
+        <item name="colorAccent">@color/category_14</item>
+    </style>
+
+    <style name="Category.15">
+        <item name="colorAccent">@color/category_15</item>
+    </style>
+
+    <style name="Category.16">
+        <item name="colorAccent">@color/category_16</item>
+    </style>
+
+    <style name="Category.17">
+        <item name="colorAccent">@color/category_17</item>
+    </style>
+
+    <style name="Category.18">
+        <item name="colorAccent">@color/category_18</item>
+    </style>
+
+    <style name="Category.19">
+        <item name="colorAccent">@color/category_19</item>
+    </style>
+
+    <style name="Category.20">
+        <item name="colorAccent">@color/category_20</item>
+    </style>
+
+</resources>

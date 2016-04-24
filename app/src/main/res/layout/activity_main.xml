@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="toneHandler"
+            type="com.farundorl.android.Tototo.ToneHandler" />
+
+        <variable
+            name="duration"
+            type="int" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_1"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.1" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_2"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.2" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_3"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.3" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_4"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_5"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.5" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_6"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.6" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_7"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.7" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_8"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_9"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.9" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_10"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.10" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_11"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.11" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_12"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_13"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.13" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_14"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.14" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_15"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.15" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_16"
+                    style="@style/ToneButton"
+                    android:onClick="@{toneHandler.click}"
+                    android:theme="@style/Category.16" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:max="5000"
+                android:progress="@{duration}"
+                android:theme="@style/Category.18" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
